@@ -1,49 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #4a90e2;
-        }
-        p {
-            font-size: 1.2rem;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background-color: #4a90e2;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background-color: #357abd;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robert Niyazoff's Portfolio</title>
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-origin"
+    />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="Files/Website_Logo.png" />
 </head>
+
 <body>
-    <div class="container">
-        <h1>Under Construction</h1>
-        
-        <a href="https://www.linkedin.com/in/robertniyazoff" class="button" target="_blank">Visit My LinkedIn</a>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <!--
+        <li><a href="#experience">Experience</a></li>
+      -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero fade-in">
+    <div class="hero-content">
+      <h1>Robert Niyazoff</h1>
+      <h1 id="typewriter"></h1>
+      <p>
+        Hi there! I'm Robert. I am currently pursuing a degree in Computer Science at CUNY Queens College, 
+        with a strong passion for software engineering/web development and AI. 
+        My coursework covers algorithms, programming languages, 
+        and I love applying what I learn to real-world challenges. Exploring innovative solutions and turning ideas 
+        into practical results excites me both inside and outside the classroom.
+      </p>
+      <a class="hero-btn" href="#about">Learn More About Me</a>
+       <!-- Mail, Github, and LinkedIn Icons -->
+       <div class="hero-icons">
+        <a href="mailto:your-robertniyazoffca@gmail.com" target="_blank" rel="noopener" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/recursiverob" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/robertniyazoff" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </div>
+  </section>
+
+  <!-- MAIN -->
+  <div class="container">
+    <!-- ABOUT SECTION -->
+<section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <!--
+        <h3> I | Q | T</h3>
+        -->
+        <h3>Who</h4>
+        <ul class="about-list">
+          
+          <li>First-generation student at CUNY Queens College from Queens, NY</li>
+          <li>Major: Computer Science </li>
+          <!--
+          <li> MM </li>
+        -->
+          <li>Passionate about creating things and making a difference in the world</li>
+        </ul>
+        <div class="about-subsection">
+          <h3>Interests</h4>
+          <ul class="about-list">
+            <li>Software engineering and Web Development</li>
+            <li>AGI & Bigtech</li>
+            <li>Cars</li>
+          </ul>
+        </div>
+        <div class="about-subsection">
+          <h3>Hobbies</h4>
+          <ul class="about-list">
+            <li>Gaining more knowledge through various podcasts</li>
+            <li>Playing Sports</li>
+            <li>Cycling</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-image">
+        
+        <img src="Files/LinkedIn_Pfp2.jpg" alt="LinkedIn_Pfp" />
+      </div>
+    </div>
+  </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="fade-in">
+      <h2>Latest Projects</h2>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="Files/SpoutScout_Logo_Name.png" alt="Project 1" />
+          <h3>SpoutScout</h3>
+          <p>
+            SpoutScout is a web platform that helps users locate accessible drinking fountains across the United States. 
+            It provides real-time directions, allows users to search by location or ZIP code, 
+            and includes features such as satellite view and geolocation for convenience. <br>
+            <br>Skills Used: JavaScript | Python | HTML/CSS | JSON | Google Maps API | Nominatim API
+          </p>
+          <a href="https://www.spoutscout.xyz" target="_blank">
+            <i class="fa fa-external-link-alt"></i> View Project
+          </a>
+        </div>
+        <div class="project-card">
+          <img src="Files/Website_Logo.png" alt="Project 2" />
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A fully responsive personal website I built to showcase my projects, and a little about me. 
+            <br>
+            <br>Skills Used: JavaScript | HTML/CSS             
+          </p>
+          <a href="https://www.robertniyazoff.com" target="_blank">
+            <i class="fa fa-external-link-alt"></i> View Project
+          </a>
+        </div>
+        <!-- Temporary Placeholder for Project 3 till it's ready
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250" alt="Project 3" />
+          <h3> </h3>
+          <p>
+            
+          </p>
+          <a href="#!" target="_blank">
+            <i class="fa fa-external-link-alt"></i> View Project
+          </a>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+     <!--
+    <section id="experience" class="fade-in">
+      <h2>Experience</h2>
+      <div class="experience-wrapper">
+        <div class="experience-item">
+          <h3>Project Developer Intern, PYE Education</h3>
+          <div class="role">February 2023 - May 2023</div>
+          <p>
+            At PYE Education, I Developed and hosted over 50 well-documented Java and C++ programming projects with tutorials, 
+            quizzes, and video walkthroughs, improving student engagement and outcomes by over 26%, while earning 
+            supervisor recognition for exceptional dedication and results.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3> </h3>
+          <div class="role"> </div>
+          <p>
+            
+          </p>
+        </div>
+        
+        <div class="experience-item">
+          <h3> </h3>
+          <div class="role"> 202- - 202- </div>
+          <p>
+            
+          </p>
+        </div>
+      </div>
+    
+    </section>
+-->
+    
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+        <!--
+      <div class="footer-social">
+        <a href="https://github.com/recursiverob" target="_blank" rel="noopener" aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://linkedin.com/robertniyazoff" target="_blank" rel="noopener" aria-label="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+          -->
+      </div>
+      <p>Copyright &copy; 2025 by Robert Niyazoff. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS Script -->
+  <script src="script.js"></script>
 </body>
 </html>

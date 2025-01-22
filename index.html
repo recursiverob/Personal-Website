@@ -7,13 +7,11 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-205P4KLP0W');
 </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Robert Niyazoff's Portfolio</title>
-  
   
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
@@ -28,10 +26,10 @@
     crossorigin="anonymous"
     referrerpolicy="no-origin"
     />
-
+  
   <!-- Main CSS -->
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="Files/Website_Logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="Files/Website_Logo.png" /> 
 </head>
 
 <body>
@@ -42,9 +40,6 @@
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <!--
-        <li><a href="#experience">Experience</a></li>
-      -->
       </ul>
     </nav>
   </header>
@@ -62,61 +57,56 @@
         into practical results excites me both inside and outside the classroom.
       </p>
       <a class="hero-btn" href="#about">Learn More About Me</a>
-       <!-- Mail, Github, and LinkedIn Icons -->
+       <!-- Mail, Github, and LinkedIn Icons  -->
        <div class="hero-icons">
         <a href="mailto:your-robertniyazoffca@gmail.com" target="_blank" rel="noopener" aria-label="Email">
           <i class="fas fa-envelope"></i>
         </a>
-        <a href="https://github.com/recursiverob" target="_blank" rel="noopener" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
         <a href="https://linkedin.com/in/robertniyazoff" target="_blank" rel="noopener" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/recursiverob" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- MAIN -->
+  <!-- MAIN STUFF -->
   <div class="container">
     <!-- ABOUT SECTION -->
 <section id="about" class="fade-in">
     <h2>About Me</h2>
     <div class="about-content">
       <div class="about-text">
-        <!--
-        <h3> I | Q | T</h3>
-        -->
         <h3>Who</h4>
         <ul class="about-list">
           
           <li>First-generation student at CUNY Queens College from Queens, NY</li>
           <li>Major: Computer Science </li>
-          <!--
-          <li> MM </li>
-        -->
-          <li>Driven by a passion for innovation and a desire to make a meaningful impact on the world</li>
+          <li>Minor: Mathematics </li>
+          <li>Passionate about creating things and making a difference in the world</li>
         </ul>
         <div class="about-subsection">
           <h3>Interests</h4>
           <ul class="about-list">
             <li>Software Engineering and Web Development</li>
             <li>Stocks/Crypto & Bigtech</li>
-            <li>Finance</li>
+            <li>Real Estate</li>
           </ul>
         </div>
         <div class="about-subsection">
           <h3>Hobbies</h4>
           <ul class="about-list">
-            <li>Gaining more knowledge through various podcasts</li>
-            <li>Playing Sports</li>
             <li>Cycling</li>
+            <li>Playing Sports</li>
+            <li>Learning more through educational videos and podcasts</li>
           </ul>
         </div>
       </div>
       <div class="about-image">
-        
-        <img src="Files/LinkedIn_Pfp2.jpg" alt="LinkedIn_Pfp" />
+        <!-- LinkedIn PFP -->
+        <img src="/Files/LinkedIn_Pfp2.jpg" alt="LinkedIn_Pfp" />
       </div>
     </div>
   </section>
@@ -124,96 +114,78 @@
     <!-- PROJECTS SECTION -->
     <section id="projects" class="fade-in">
       <h2>Latest Projects</h2>
-      
       <div class="projects-grid">
         <div class="project-card">
-          <img src="Files/SpoutScout_Logo_Name.png" alt="Project 1" />
-          <h3>SpoutScout</h3>
+          <img src="/Files/SettleSmart_Logo_Name1.png" alt="SettleSmart | Project 5" />
+          <h3>SettleSmart | Data-Driven Relocation Evaluation Tool (Coming Soon)</h3>
           <p>
-            SpoutScout is a web platform that helps users locate accessible drinking fountains across the United States. 
-            It provides real-time directions, allows users to search by location or ZIP code, 
-            and includes features such as satellite view and geolocation for convenience. <br>
-            <br>Skills Used: JavaScript | Python | HTML/CSS | JSON | Google Maps API | Nominatim API
+            An interactive, data-driven tool that evaluates properties and neighborhoods based on crime rates, school ratings, environmental quality, public transit access, and property features. 
+            SettleSmart aggregates real-time data from trusted sources to calculate a comprehensive "Move Score," to help users make informed relocation decisions with detailed insights and visualizations. <br>
+            <br>Tech Stack Used: React | TypeScript | FBI CDE API | Mapbox API | EPA AirNow API | Google Places API |  NCES API
           </p>
-          <a href="https://www.spoutscout.xyz" target="_blank">
+          <a href="https://www.settlesmart.pro" target="_blank">
             <i class="fa fa-external-link-alt"></i> View Project
           </a>
         </div>
         <div class="project-card">
-          <img src="Files/Website_Logo.png" alt="Project 2" />
+          <img src="Files/ScoreMyStocks_Logo_Name.png" alt="StockSimplified | Project 4" />
+          <h3>ScoreMyStocks | Stock/Portfolio Anaylzer</h3>
+          <p>
+            My implementation of a stock/sportfolio analysis tool that evaluates stocks using several financial metrics such as 
+            P/E Ratio, PEG Ratio, ROE, Profit Margin, Revenue Growth, Earnings Growth, Beta, Dividend Yield, and 52-Week High/Low. 
+            The tool integrates with the Alpha Vantage API to fetch real-time data, categorizes stocks into performance tiers (Very Good, Good, Neutral, Poor), 
+            and provides recommendations with data visualizations. <br>
+            <br>Tech Stack Used: React | JavaScript | Vite (just for setting and bundling up the dev environment) | Alpha Vantage API
+          </p>
+          <a href="https://www.sscoremystocks.xyz" target="_blank">
+            <i class="fa fa-external-link-alt"></i> View Project
+          </a>
+        </div>
+        <div class="project-card">
+          <img src="/Files/Menu_Scan_Logo.png" alt=" MenuScan | Project 3" />
+          <h3>MenuScan | AI Menu Scanner</h3>
+          <p>
+            A small MVP app I developed using React Native to streamline ordering at restaurants. 
+            It captures an image of a menu using a phone's camera, and then extracts dish names, prices, 
+            and descriptions using OCR (Google Vision API & Tesseract.js), and displays relevant dish images with brief yet appealing AI-generated descriptions (GPT-3.5-turbo). <br>
+            <br>Tech Stack Used: React Native | TypeScript | Expo | Google Vision API | Tesseract.js | Google Custom Search API | OpenAI GPT API
+          </p>
+          <a href="https://github.com/recursiverob/MenuScan" target="_blank">
+            <i class="fa fa-external-link-alt"></i> View Project
+          </a>
+        </div>
+        <div class="project-card">
+          <img src="/Files/SpoutScout_Logo_Name.png" alt="SpoutScout | Project 1" />
+          <h3>SpoutScout | Drinking Fountain Locater</h3>
+          <p>
+            A website that helps users locate accessible drinking fountains across the United States, with over 4,500 fountains mapped.
+            It provides real-time directions, allows users to search by location or ZIP code, 
+            and includes features such as toggling between satellite and default map view and geolocation for quick and easy access. <br>
+            <br>Tech Stack Used: JavaScript | Python | HTML/CSS | JSON | Google Maps API | Nominatim API
+          </p>
+          <a href="https://www.spoutscout.xyz" target="_blank" >  
+            <i class="fa fa-external-link-alt"></i> View Project
+          </a>
+        </div>
+        <div class="project-card">
+          <img src="/Files/Website_Logo.png" alt="Personal-Website | Project 2" />
           <h3>Personal Portfolio Website</h3>
           <p>
-            A fully responsive personal website I built to showcase my projects, and a little about me. 
+            A personal website I built to showcase my projects, and a little about me. 
             <br>
-            <br>Skills Used: JavaScript | HTML/CSS             
+            <br>Tech Stack Used: JavaScript | HTML/CSS             
           </p>
           <a href="https://www.robertniyazoff.com" target="_blank">
             <i class="fa fa-external-link-alt"></i> View Project
           </a>
         </div>
-        <!-- Temporary Placeholder for Project 3 till it's ready
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x250" alt="Project 3" />
-          <h3> </h3>
-          <p>
-            
-          </p>
-          <a href="#!" target="_blank">
-            <i class="fa fa-external-link-alt"></i> View Project
-          </a>
-        </div>
-        -->
       </div>
     </section>
-
-    <!-- EXPERIENCE SECTION -->
-     <!--
-    <section id="experience" class="fade-in">
-      <h2>Experience</h2>
-      <div class="experience-wrapper">
-        <div class="experience-item">
-          <h3>Project Developer Intern, PYE Education</h3>
-          <div class="role">February 2023 - May 2023</div>
-          <p>
-            At PYE Education, I Developed and hosted over 50 well-documented Java and C++ programming projects with tutorials, 
-            quizzes, and video walkthroughs, improving student engagement and outcomes by over 26%, while earning 
-            supervisor recognition for exceptional dedication and results.
-          </p>
-        </div>
-        <div class="experience-item">
-          <h3> </h3>
-          <div class="role"> </div>
-          <p>
-            
-          </p>
-        </div>
-        
-        <div class="experience-item">
-          <h3> </h3>
-          <div class="role"> 202- - 202- </div>
-          <p>
-            
-          </p>
-        </div>
-      </div>
-    
-    </section>
--->
-    
   </div>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-content">
-        <!--
-      <div class="footer-social">
-        <a href="https://github.com/recursiverob" target="_blank" rel="noopener" aria-label="GitHub"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="https://linkedin.com/robertniyazoff" target="_blank" rel="noopener" aria-label="LinkedIn"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-          -->
       </div>
       <p>Copyright &copy; 2025 by Robert Niyazoff. All Rights Reserved.</p>
     </div>
